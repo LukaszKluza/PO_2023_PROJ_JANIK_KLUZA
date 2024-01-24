@@ -14,6 +14,7 @@ import java.util.concurrent.Future;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
 import org.example.data.SimulationStatistics;
 import org.example.data.Statistics;
 import org.example.model.*;
@@ -165,7 +166,6 @@ public class SimulationPresenter implements MapChangeListener {
                 GridPane.setHalignment(circle, HPos.CENTER);
                 if(chosen != null && chosen.getPosition().equals(currentPosition.add(addVector))){
                     circle.setFill(Color.ORANGE);
-    //                displayAnimalStatistics(Optional.ofNullable(chosen));
                 } else if (tracking && worldElement instanceof Animal && ((Animal) worldElement).getAnimalGens().equals(popularGens)){
                     circle.setFill(Color.BLUE);
                 }
