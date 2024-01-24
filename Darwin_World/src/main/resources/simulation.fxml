@@ -65,7 +65,7 @@
                 </HBox>
                 <VBox>
                     <Label text="Animal's Gens: " style="-fx-padding: 10"/>
-                    <Label fx:id="animalGens" text="-" style="-fx-padding: 10"/>
+                    <GridPane fx:id="animalGens" alignment="CENTER"/>
                 </VBox>
                 <HBox>
                     <Label text="Length of life: " style="-fx-padding: 10"/>
